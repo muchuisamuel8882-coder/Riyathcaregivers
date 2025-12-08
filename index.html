@@ -70,7 +70,7 @@
       <div class="logo">Trusted Riyadh Services</div>
       <div class="nav-links">
         <a href="#hero-en" onclick="setLang('en')">Home</a>
-        <a href="#services">Services</a>
+        <a href="#services" onclick="setLang('en')">Services</a>
         <a href="#hero-ar" onclick="setLang('ar')">العربية</a>
       </div>
       <div>
@@ -97,8 +97,9 @@
       <a href="https://wa.me/966562669182" class="btn whatsapp" target="_blank">توظيف عبر واتساب</a>
     </section>
 
-    <h2 id="services" style="margin-top:30px">Our Services • خدماتنا</h2>
-    <div class="services">
+    <!-- English Services -->
+    <h2 id="services">Our Services • خدماتنا</h2>
+    <div class="services" id="services-list-en">
       <div class="service-card">
         <h3>Cleaning Services</h3>
         <p>Home cleaning, offices, deep cleaning, and move-in/out cleaning.</p>
@@ -117,6 +118,27 @@
       </div>
     </div>
 
+    <!-- Arabic Services -->
+    <h2 id="services-ar" class="arabic hidden">خدماتنا</h2>
+    <div class="services arabic hidden" id="services-list-ar">
+      <div class="service-card">
+        <h3>خدمات التنظيف</h3>
+        <p>تنظيف المنازل والمكاتب، التنظيف العميق والتنظيف عند الانتقال.</p>
+      </div>
+      <div class="service-card">
+        <h3>السائقون للتوظيف</h3>
+        <p>سائقون شخصيون وشركات — عقود يومية أو شهرية.</p>
+      </div>
+      <div class="service-card">
+        <h3>التمريض ورعاية المنزل</h3>
+        <p>ممرضون مؤهلون، رعاية كبار السن، ودعم التعافي.</p>
+      </div>
+      <div class="service-card">
+        <h3>مقدمو الرعاية والمساعدين المنزليين</h3>
+        <p>جليسات أطفال، مساعدين مقيمين أو غير مقيمين للمنازل.</p>
+      </div>
+    </div>
+
     <footer>
       <strong>Trusted Riyadh Services</strong>
       <p>Providing reliable staff for homes and businesses in Riyadh.</p>
@@ -128,10 +150,28 @@
 
   <script>
     function setLang(lang) {
-      const en = document.getElementById('hero-en');
-      const ar = document.getElementById('hero-ar');
-      if(lang === 'ar') { en.classList.add('hidden'); ar.classList.remove('hidden'); }
-      else { ar.classList.add('hidden'); en.classList.remove('hidden'); }
+      const enHero = document.getElementById('hero-en');
+      const arHero = document.getElementById('hero-ar');
+      const enServicesTitle = document.getElementById('services');
+      const enServicesList = document.getElementById('services-list-en');
+      const arServicesTitle = document.getElementById('services-ar');
+      const arServicesList = document.getElementById('services-list-ar');
+
+      if(lang === 'ar') { 
+        enHero.classList.add('hidden'); 
+        arHero.classList.remove('hidden'); 
+        enServicesTitle.classList.add('hidden');
+        enServicesList.classList.add('hidden');
+        arServicesTitle.classList.remove('hidden');
+        arServicesList.classList.remove('hidden');
+      } else { 
+        arHero.classList.add('hidden'); 
+        enHero.classList.remove('hidden'); 
+        enServicesTitle.classList.remove('hidden');
+        enServicesList.classList.remove('hidden');
+        arServicesTitle.classList.add('hidden');
+        arServicesList.classList.add('hidden');
+      }
     }
   </script>
 
