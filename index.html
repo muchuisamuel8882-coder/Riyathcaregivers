@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trusted Riyadh Services | خدمات الرياض الموثوقة</title>
+  <meta name="description" content="Reliable cleaning, drivers, nurses and home-care staff in Riyadh. Professional, verified and available daily.">
+
+  <!-- Google Tag -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17738543886"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -10,31 +15,31 @@
     gtag('config', 'AW-17738543886');
   </script>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trusted Riyadh Services | خدمات الرياض الموثوقة</title>
-  <meta name="description" content="Reliable cleaning, drivers, nurses and home-care staff in Riyadh. Professional, verified, and available daily.">
-
   <style>
-    body { margin:0; font-family: Arial, sans-serif; background:#f6f8fb; line-height:1.6; }
-    .container { max-width:1100px; margin:auto; padding:20px; }
-    header { display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; }
-    .logo { font-size:22px; font-weight:bold; color:#0b6cf0; }
-    .btn { background:#0b6cf0; color:white; padding:10px 15px; border-radius:6px; text-decoration:none; display:inline-block; margin:5px 0; }
-    .call { background:#0aa654; }
-    .whatsapp { background:#25D366; }
-    h1 { margin-top:0; }
-    .services { display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); gap:15px; margin-top:20px; }
-    .service-card { background:#fff; padding:15px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.05); }
-    footer { margin-top:30px; padding:20px; background:#fff; border-radius:10px; }
+    body {
+      margin: 0;
+      background: #f6f8fb;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    .container { max-width: 1100px; margin: auto; padding: 20px; }
+    header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; }
+    .logo { font-size: 22px; font-weight: bold; color: #0b6cf0; }
+    .btn { background: #0b6cf0; color: #fff; padding: 10px 15px; border-radius: 6px; text-decoration: none; margin-right: 5px; display: inline-block; }
+    .call { background: #0aa654; }
+    .whatsapp { background: #25D366; }
+    h1 { margin-top: 0; }
+    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-top: 20px; }
+    .service-card { background: #fff; padding: 15px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+    footer { margin-top: 30px; padding: 20px; background: #fff; border-radius: 10px; }
 
-    .arabic { direction:rtl; font-family: "Noto Naskh Arabic", Arial; }
+    /* Arabic support */
+    .arabic { direction: rtl; font-family: "Noto Naskh Arabic", Arial; }
     .hidden { display:none; }
 
-    @media (max-width:700px){ header{flex-direction:column; gap:10px;} }
+    @media (max-width: 700px) { header { flex-direction: column; gap: 10px; } }
   </style>
 </head>
-
 <body>
   <div class="container">
 
@@ -68,7 +73,7 @@
     <div class="services">
       <div class="service-card">
         <h3>Cleaning Services</h3>
-        <p>Home cleaning, office cleaning, deep cleaning, move-in/out cleaning.</p>
+        <p>Home cleaning, offices, deep cleaning and move-in/out cleaning.</p>
       </div>
       <div class="service-card">
         <h3>Drivers for Hire</h3>
@@ -76,11 +81,11 @@
       </div>
       <div class="service-card">
         <h3>Nursing & Home Care</h3>
-        <p>Qualified nurses, elderly care, post-hospital recovery support.</p>
+        <p>Qualified nurses, elderly care, and recovery support.</p>
       </div>
       <div class="service-card">
         <h3>Domestic Helpers & Caregivers</h3>
-        <p>Babysitters, live-in/out helpers, full-time & part-time options.</p>
+        <p>Babysitters, live-in/out helpers for homes.</p>
       </div>
     </div>
 
@@ -97,7 +102,7 @@
     function setLang(lang) {
       const en = document.getElementById('hero-en');
       const ar = document.getElementById('hero-ar');
-      if(lang==='ar'){ en.classList.add('hidden'); ar.classList.remove('hidden'); }
+      if(lang === 'ar') { en.classList.add('hidden'); ar.classList.remove('hidden'); }
       else { ar.classList.add('hidden'); en.classList.remove('hidden'); }
     }
   </script>
